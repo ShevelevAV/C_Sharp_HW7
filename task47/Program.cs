@@ -21,13 +21,13 @@ double[,] GetArray(int m, int n, int minValue, int maxValue)
     }
     return result;
 }
-void PrdoubleArray(double[,]inArray)
+void PrintArray(double[,]inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            Console.Write($"{inArray[i, j] } ");
+            Console.Write($"{inArray[i, j]  } ");
         }
         Console.WriteLine();
     }
@@ -38,4 +38,6 @@ Console.Write("Введите количество столбцов: ");
 int columns = int.Parse(Console.ReadLine()!);
 
 double[,] array = GetArray(rows, columns, -10, 10);
-PrdoubleArray(array);
+PrintArray(array);
+
+//Иногда в массиве появляется число формата -0,09999999999999998, из-за чего такое может быть?
