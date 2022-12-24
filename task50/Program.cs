@@ -38,7 +38,7 @@ void Search(int[,] arr, int a, int b)
 {
     if (a <= arr.GetLength(0)-1)
     {
-        if (b <= arr.GetLength(1) - 1) ;
+        if (b <= arr.GetLength(1) - 1)
         {
             Console.WriteLine($"{a} {b} -> {arr[a, b]}");
         }
